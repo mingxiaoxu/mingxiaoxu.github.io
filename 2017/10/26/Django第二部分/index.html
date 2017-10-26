@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="python,Django," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="这不是一个普通的博客。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="水木湾一霸的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="创建数据库数据库的建立django框架中自带了一个SQLite数据库，你可以不用安装新的数据库即可进行应用开发，如果你需要使用其他的数据库，你需要先安装数据库，然后再mysite/setting.py中配置相关的数据库连接信息，最后才能在django中使用数据库。 在mysite/setting 中你还可以配置所在时区，比如中国的时区配置为：time_zone:Shanghai/Asia. 在IN">
+<meta name="keywords" content="python,Django">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Django第二部分">
+<meta property="og:url" content="http://yoursite.com/2017/10/26/Django第二部分/index.html">
 <meta property="og:site_name" content="水木湾一霸的博客">
-<meta property="og:description" content="这不是一个普通的博客。">
+<meta property="og:description" content="创建数据库数据库的建立django框架中自带了一个SQLite数据库，你可以不用安装新的数据库即可进行应用开发，如果你需要使用其他的数据库，你需要先安装数据库，然后再mysite/setting.py中配置相关的数据库连接信息，最后才能在django中使用数据库。 在mysite/setting 中你还可以配置所在时区，比如中国的时区配置为：time_zone:Shanghai/Asia. 在IN">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-26T13:00:54.543Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="水木湾一霸的博客">
-<meta name="twitter:description" content="这不是一个普通的博客。">
+<meta name="twitter:title" content="Django第二部分">
+<meta name="twitter:description" content="创建数据库数据库的建立django框架中自带了一个SQLite数据库，你可以不用安装新的数据库即可进行应用开发，如果你需要使用其他的数据库，你需要先安装数据库，然后再mysite/setting.py中配置相关的数据库连接信息，最后才能在django中使用数据库。 在mysite/setting 中你还可以配置所在时区，比如中国的时区配置为：time_zone:Shanghai/Asia. 在IN">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/26/Django第二部分/"/>
 
 
 
 
 
-  <title>水木湾一霸的博客</title>
+  <title>Django第二部分 | 水木湾一霸的博客</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband">
     <a href="https://github.com/mingxiaoxu"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
     </div>
@@ -250,9 +251,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -282,9 +283,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/26/Django第二部分/" itemprop="url">Django第二部分</a></h1>
+          <h1 class="post-title" itemprop="name headline">Django第二部分</h1>
         
 
         <div class="post-meta">
@@ -356,9 +355,7 @@
       
 
       
-        
-          
-            <h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><h3 id="数据库的建立"><a href="#数据库的建立" class="headerlink" title="数据库的建立"></a>数据库的建立</h3><p>django框架中自带了一个SQLite数据库，你可以不用安装新的数据库即可进行应用开发，如果你需要使用其他的数据库，你需要先安装数据库，然后再mysite/setting.py中配置相关的数据库连接信息，最后才能在django中使用数据库。</p>
+        <h2 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h2><h3 id="数据库的建立"><a href="#数据库的建立" class="headerlink" title="数据库的建立"></a>数据库的建立</h3><p>django框架中自带了一个SQLite数据库，你可以不用安装新的数据库即可进行应用开发，如果你需要使用其他的数据库，你需要先安装数据库，然后再mysite/setting.py中配置相关的数据库连接信息，最后才能在django中使用数据库。</p>
 <p>在mysite/setting 中你还可以配置所在时区，比如中国的时区配置为：<br>time_zone:Shanghai/Asia.</p>
 <p>在INSTALLED_APPS 中配置自己的app应用。在INSTALLED_APPS中，django已经默认配置了很多应用，如果你不需要这些应用，你可以把它删掉。默认包含的应用有：<br><strong>django.contrib.admin</strong> —— 管理站点。你可以快捷地使用它。<br><strong>django.contrib.auth</strong> —— 认证系统。<br><strong>django.contrib.contenttypes</strong> —— 内容类型框架。<br><strong>django.contrib.sessions</strong> —— session 框架。<br><strong>django.contrib.messages</strong> —— 消息框架。<br><strong>django.contrib.staticfiles</strong> —— 静态文件管理框架。<br>这些应用至少使用了一张表，所以在使用这些应用之前，我们首先要在数据库中建立表。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python manage.py migrate</div></pre></td></tr></table></figure></p>
 <p>使用数据库迁移指令，迁移数据库。<br>migrate 命令在 mysite/settings.py 文件的 INSTALLED_APPS 设置中寻找，并根据数据库设置创建一些必要的数据库表和随应用迁移的数据库。</p>
@@ -383,8 +380,6 @@
 <p>只需要做一件事：我们得告诉管理页面，Question 对象需要被管理。打开 polls/admin.py 文件，把它编辑成下面这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># polls/admin.py</div><div class="line"></div><div class="line">from django.contrib import admin</div><div class="line">from .models import Question</div><div class="line">admin.site.register(Question)</div></pre></td></tr></table></figure></p>
 <p>进入管理页面就可以享受快捷的管理功能了。</p>
 
-          
-        
       
     </div>
     
@@ -399,300 +394,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/25/Django第一部分/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Mx">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="水木湾一霸的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/25/Django第一部分/" itemprop="url">Django第一部分</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-25T14:18:03+08:00">
-                2017-10-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Django/" itemprop="url" rel="index">
-                    <span itemprop="name">Django</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/python/" rel="tag"># python</a>
           
-
+            <a href="/tags/Django/" rel="tag"># Django</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="开始一个项目"><a href="#开始一个项目" class="headerlink" title="开始一个项目"></a>开始一个项目</h2><h3 id="创建一个新项目"><a href="#创建一个新项目" class="headerlink" title="创建一个新项目"></a>创建一个新项目</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Django-admin startproject projectname</div></pre></td></tr></table></figure>
-<p>生成目录情况如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">projectname/  </div><div class="line">　　manage.py  #用于管理项目</div><div class="line">　　projectname/  </div><div class="line">　　　　__init__.py #说明此文件夹是一个py包</div><div class="line">       setting.py #配置文件 用于添加相关配置</div><div class="line">       urls.py #url与view的映射文件</div><div class="line">       wsgi.py #当你部署项目到一个兼容 WSGI 的服务器上时所需要的入口点</div></pre></td></tr></table></figure></p>
-<h3 id="创建一个新应用"><a href="#创建一个新应用" class="headerlink" title="创建一个新应用"></a>创建一个新应用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python manage.py startapp appname</div></pre></td></tr></table></figure>
-<p>生成目录情况如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">appname/  </div><div class="line">　　__init__.py</div><div class="line">　　admin.py</div><div class="line">　　migrations/  </div><div class="line">    　　__init__.py</div><div class="line">　　model.py   #模型</div><div class="line">　　tests.py   #测试</div><div class="line">　　views.py   #视图</div></pre></td></tr></table></figure></p>
-<h3 id="实战创建一个项目"><a href="#实战创建一个项目" class="headerlink" title="实战创建一个项目"></a>实战创建一个项目</h3><p>现在我们开始我们的第一个网站设计(设计一个简单的投票网站)，首先新建一个项目:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Django-admin startproject mysite</div></pre></td></tr></table></figure></p>
-<p>然后生成项目文件：mysite<br>在mysite文件夹下生成了相关文件和文件夹。<br>实际目录结构为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">mysite/  </div><div class="line">　　manage.py　　</div><div class="line">　　mysite/　　</div><div class="line">　　　　__init__.py</div><div class="line">　　　　urls.py  </div><div class="line">　　　　setting.py</div><div class="line">　　　　wsgi.py</div></pre></td></tr></table></figure></p>
-<h3 id="关于开发服务器"><a href="#关于开发服务器" class="headerlink" title="关于开发服务器"></a>关于开发服务器</h3><p>创建项目过后，可以启动开发服务器。进入项目文件，在manage.py 同层目录下运行命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python manage.py runserver</div></pre></td></tr></table></figure></p>
-<p>当看到：Starting development server at <a href="http://127.0.0.1:8000/" target="_blank" rel="external">http://127.0.0.1:8000/</a> 这句日志时，代表服务器已经启动完毕。在浏览器中打开这个url地址，如果显示It worked! 则服务器启动成功。</p>
-<h3 id="创建一个应用"><a href="#创建一个应用" class="headerlink" title="创建一个应用"></a>创建一个应用</h3><p>当项目创建完成过后，就可以开始创建应用了。现在我们开始创建一个polls，用于投票的应用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python manage.py startapp polls</div></pre></td></tr></table></figure></p>
-<p>生成的目录结构为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">polls/  </div><div class="line">　　__init__.py  </div><div class="line">　　admin.py  </div><div class="line">　　migrations/  </div><div class="line">　　　　__init__.py  </div><div class="line">　　model.py</div><div class="line">　　tests.py</div><div class="line">　　views,py</div></pre></td></tr></table></figure></p>
-<p>总体目录为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">mysite/  </div><div class="line">　　manage.py　　</div><div class="line">　　mysite/　　</div><div class="line">　　　　__init__.py</div><div class="line">　　　　urls.py  </div><div class="line">　　　　setting.py</div><div class="line">　　　　wsgi.py　</div><div class="line">　　polls/  </div><div class="line">　　　　__init__.py  </div><div class="line">　　　　admin.py  </div><div class="line">　　　　migrations/  </div><div class="line">　　　　　　__init__.py  </div><div class="line">　　　　model.py</div><div class="line">　　　　tests.py</div><div class="line">　　　　views,py</div></pre></td></tr></table></figure></p>
-<p>打开你的mysite的文件夹，可以发现里面多了一个polls文件夹，这就是你的应用。</p>
-<h4 id="应用和项目的区别"><a href="#应用和项目的区别" class="headerlink" title="应用和项目的区别"></a>应用和项目的区别</h4><p>项目和应用有什么区别？应用是一个专门做某件事的网络应用程序，比如博客系统、公共记录的数据库、或者简单的投票程序。项目则是一个网站使用的配置和应用的集合。项目可以包含很多个应用；而应用可以被很多个项目使用。　　</p>
-<h3 id="创建视图"><a href="#创建视图" class="headerlink" title="创建视图"></a>创建视图</h3><p>打开polls文件下的views.py文件，开始编写自己的第一个视图函数。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">from django.http import Http.Response</div><div class="line"></div><div class="line">def index(request):</div><div class="line">    return HttpResponse(&apos;Hello Worlds,welcome to my polls webapp&apos;)</div></pre></td></tr></table></figure></p>
-<p>在polls文件夹下创建一个urls.py文件。在编写以下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">from  django.conf.urls import urls</div><div class="line">from . import views</div><div class="line"></div><div class="line">urlpatterns = [</div><div class="line"> url(r&apos;^$&apos;, views.index, name=&apos;index&apos;),</div><div class="line">]</div></pre></td></tr></table></figure></p>
-<p>然后将mysite目录下的urls.py文件导入polls下的目录文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">from django.conf.urls import include, url</div><div class="line">from django.contrib import admin</div><div class="line"></div><div class="line">urlpatterns = [</div><div class="line">    url(r&apos;^polls/&apos;, include(&apos;polls.urls&apos;)),</div><div class="line">    url(r&apos;^admin/&apos;, admin.site.urls),</div><div class="line">]</div></pre></td></tr></table></figure></p>
-<p>include()函数用户引用其他urls模块。<br>url参数：regex<br>表示url地址匹配的正则表达式。<br>url参数：view<br>与url地址对应的视图<br>url参数：name</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/17/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Mx">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="水木湾一霸的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/17/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-17T18:55:17+08:00">
-                2017-10-17
-              </time>
+              <a href="/2017/10/25/Django第一部分/" rel="next" title="Django第一部分">
+                <i class="fa fa-chevron-left"></i> Django第一部分
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -702,10 +435,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -713,6 +447,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="uyan_frame"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -733,8 +476,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -808,6 +560,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建数据库"><span class="nav-number">1.</span> <span class="nav-text">创建数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库的建立"><span class="nav-number">1.1.</span> <span class="nav-text">数据库的建立</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建模型"><span class="nav-number">1.2.</span> <span class="nav-text">创建模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#激活模型"><span class="nav-number">1.3.</span> <span class="nav-text">激活模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库API"><span class="nav-number">1.4.</span> <span class="nav-text">数据库API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建管理员账户"><span class="nav-number">1.5.</span> <span class="nav-text">创建管理员账户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进入管理页面"><span class="nav-number">1.6.</span> <span class="nav-text">进入管理页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#向管理页面中加入投票应用"><span class="nav-number">1.7.</span> <span class="nav-text">向管理页面中加入投票应用</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -957,6 +725,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
@@ -982,6 +754,10 @@
   
     
 
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2146813"></script>
+      <!-- UY END -->
     
   
 
